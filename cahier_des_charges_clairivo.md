@@ -49,7 +49,7 @@ une suite logique s'il en retire une réelle valeur.
 
 1.  Générer des ventes régulières grâce à un catalogue large et
     organisé.
-2.  Réduire la barrière à l'achat avec des produits entre 0,99 € et 4,99
+2.  Réduire la barrière à l'achat avec des produits entre 2,99 € et 9,99
     €.
 3.  Transformer les visiteurs en membres grâce à des ressources
     gratuites réellement utiles.
@@ -178,22 +178,22 @@ arnaques.
                                                   possible
   ----------------------- ----------------------- -----------------------
   Étudiant en recherche   CV et candidatures      Kit CV gratuit puis
-  de stage                inefficaces             pack entretien à 3,99 €
+  de stage                inefficaces             pack entretien à 6,99 €
 
   Salarié débutant en IA  Ne sait pas quels       Guide IA gratuit puis
                           outils utiliser         pack de workflows à
-                                                  4,99 €
+                                                  9,99 €
 
   Freelance débutant      Ne sait pas trouver ses Checklist gratuite puis
-                          premiers clients        kit prospection à 4,99
+                          premiers clients        kit prospection à 9,99
                                                   €
 
   Petit commerçant        Réseaux sociaux         Calendrier gratuit puis
-                          irréguliers             pack marketing à 3,99 €
+                          irréguliers             pack marketing à 6,99 €
 
   Personne qui veut mieux Dépenses mal suivies    Budget mensuel gratuit
   gérer son argent                                puis tableur avancé à
-                                                  2,99 €
+                                                  4,99 €
   -----------------------------------------------------------------------
 
 ------------------------------------------------------------------------
@@ -234,27 +234,27 @@ génériques.
   générative en 30                            
   minutes                                     
 
-  25 prompts utiles     PDF                                         1,49 €
+  25 prompts utiles     PDF                                         2,99 €
   pour les études et le                       
   travail                                     
 
   Utiliser ChatGPT pour Guide + modèle                              2,49 €
   organiser sa semaine                        
 
-  Comparatif pratique   Guide actualisable                          2,99 €
+  Comparatif pratique   Guide actualisable                          4,99 €
   des assistants IA                           
 
-  Automatiser ses       Mini-formation                              4,99 €
+  Automatiser ses       Mini-formation                              9,99 €
   tâches répétitives                          
   sans coder                                  
 
-  Créer un assistant IA Formation progressive                       4,99 €
+  Créer un assistant IA Formation progressive                       9,99 €
   pour son activité                           
 
-  Prompts pour CV,      Pack                                        2,99 €
+  Prompts pour CV,      Pack                                        4,99 €
   lettres et entretiens                       
 
-  IA pour créer des     Tutoriel + modèles                          3,99 €
+  IA pour créer des     Tutoriel + modèles                          6,99 €
   présentations                               
   professionnelles                            
 
@@ -262,14 +262,14 @@ génériques.
   document et en                              
   extraire l'essentiel                        
 
-  Sécurité,             Checklist + guide                           1,99 €
+  Sécurité,             Checklist + guide                           3,99 €
   confidentialité et                          
   limites des IA                              
 
-  Premiers pas avec les Parcours                                    4,99 €
+  Premiers pas avec les Parcours                                    9,99 €
   agents IA                                   
 
-  Workflows IA pour     Pack de procédures                          4,99 €
+  Workflows IA pour     Pack de procédures                          9,99 €
   indépendants                                
   ------------------------------------------------------------------------
 
@@ -283,16 +283,16 @@ réponses.
   Produit                                             Format                        Gratuit / payant
   --------------------------------------------------- --------------------------- ------------------
   Checklist CV professionnel                          PDF                                    Gratuit
-  Modèle de CV ATS modifiable                         Template                                1,99 €
+  Modèle de CV ATS modifiable                         Template                                3,99 €
   Réussir son profil LinkedIn                         Guide                                   2,49 €
-  30 exemples de messages de candidature              Pack                                    1,99 €
-  Préparer un entretien d'embauche                    Guide                                   2,99 €
-  50 questions d'entretien avec méthodes de réponse   E-book                                  3,99 €
-  Trouver un stage ou une alternance                  Parcours                                4,99 €
-  Organiser sa recherche d'emploi                     Tableur + guide                         2,99 €
+  30 exemples de messages de candidature              Pack                                    3,99 €
+  Préparer un entretien d'embauche                    Guide                                   4,99 €
+  50 questions d'entretien avec méthodes de réponse   E-book                                  6,99 €
+  Trouver un stage ou une alternance                  Parcours                                9,99 €
+  Organiser sa recherche d'emploi                     Tableur + guide                         4,99 €
   Négocier son salaire                                Guide                                   3,49 €
-  Réussir sa prise de poste                           Checklist + plan 30 jours               2,99 €
-  Apprendre à travailler en équipe                    Mini-formation                          3,99 €
+  Réussir sa prise de poste                           Checklist + plan 30 jours               4,99 €
+  Apprendre à travailler en équipe                    Mini-formation                          6,99 €
   Méthodes de mémorisation et révision                Guide + fiches                          2,49 €
 
 **Pistes de recherche :** CV ATS, entretien, LinkedIn, alternance,
@@ -307,23 +307,23 @@ organisation et communication professionnelle.
   Trouver une idée      Workbook                                   Gratuit
   d'activité réaliste                         
 
-  Valider une idée      Checklist                                   1,49 €
+  Valider une idée      Checklist                                   2,99 €
   avant de dépenser                           
 
   Construire une offre  Guide                                       2,49 €
   de service                                  
 
-  Fixer ses tarifs en   Tableur + guide                             2,99 €
+  Fixer ses tarifs en   Tableur + guide                             4,99 €
   freelance                                   
 
-  Trouver ses premiers  Mini-formation                              4,99 €
+  Trouver ses premiers  Mini-formation                              9,99 €
   clients                                     
 
   Messages de           Templates                                   2,49 €
   prospection                                 
   personnalisables                            
 
-  Créer une             Guide à actualiser                          3,99 €
+  Créer une             Guide à actualiser                          6,99 €
   micro-entreprise en                         
   France : premiers                           
   repères                                     
@@ -331,16 +331,16 @@ organisation et communication professionnelle.
   Construire un         Template                                    3,49 €
   mini-business plan                          
 
-  Organiser ses clients Notion / tableur                            2,99 €
+  Organiser ses clients Notion / tableur                            4,99 €
   et ses tâches                               
 
-  Créer une page de     Guide + modèle                              3,99 €
+  Créer une page de     Guide + modèle                              6,99 €
   vente efficace                              
 
-  Lancer un produit     Parcours                                    4,99 €
+  Lancer un produit     Parcours                                    9,99 €
   numérique                                   
 
-  Fidéliser ses         Guide                                       2,99 €
+  Fidéliser ses         Guide                                       4,99 €
   premiers clients                            
   ------------------------------------------------------------------------
 
@@ -360,30 +360,30 @@ conseil financier personnalisé comme un simple guide.
   Suivre ses dépenses   Tableur                                    Gratuit
   en 10 minutes                               
 
-  Budget mensuel prêt à Excel / Google Sheets                       1,49 €
+  Budget mensuel prêt à Excel / Google Sheets                       2,99 €
   remplir                                     
 
   Construire une        Guide                                       2,49 €
   épargne de précaution                       
 
-  Comprendre les        Guide                                       1,99 €
+  Comprendre les        Guide                                       3,99 €
   intérêts et les frais                       
   bancaires                                   
 
-  Réduire ses dépenses  Checklist                                   1,49 €
+  Réduire ses dépenses  Checklist                                   2,99 €
   récurrentes                                 
 
-  Organiser ses         Template                                    1,99 €
+  Organiser ses         Template                                    3,99 €
   factures et échéances                       
 
-  Comprendre les bases  E-book éducatif                             3,99 €
+  Comprendre les bases  E-book éducatif                             6,99 €
   de l'investissement                         
 
-  Comprendre les        Guide pédagogique                           2,99 €
+  Comprendre les        Guide pédagogique                           4,99 €
   risques des                                 
   cryptomonnaies                              
 
-  Repérer les arnaques  Guide + checklist                           1,99 €
+  Repérer les arnaques  Guide + checklist                           3,99 €
   financières                                 
 
   Planifier un objectif Tableur + méthode                           2,49 €
@@ -399,17 +399,17 @@ base et investissement pour débutants.
   Produit                                               Format               Gratuit / payant
   ----------------------------------------------------- ------------------ ------------------
   Checklist pour améliorer un profil Instagram          PDF                           Gratuit
-  Calendrier de contenu de 30 jours                     Template                       1,99 €
+  Calendrier de contenu de 30 jours                     Template                       3,99 €
   50 idées de publications pour une petite entreprise   Pack                           2,49 €
   Créer des vidéos courtes efficaces                    Mini-guide                     2,49 €
-  Écrire une bonne description de produit               Guide + exemples               1,99 €
-  Bases du référencement naturel                        Guide                          2,99 €
+  Écrire une bonne description de produit               Guide + exemples               3,99 €
+  Bases du référencement naturel                        Guide                          4,99 €
   Construire une newsletter                             Guide + modèles                3,49 €
-  Créer une campagne e-mail simple                      Mini-formation                 4,99 €
-  Publicité Meta : comprendre les bases                 Guide                          3,99 €
-  Analyser ses statistiques sociales                    Tableur + guide                2,99 €
-  Créer une identité de marque cohérente                Workbook                       3,99 €
-  Créer une page de vente                               Template + guide               3,99 €
+  Créer une campagne e-mail simple                      Mini-formation                 9,99 €
+  Publicité Meta : comprendre les bases                 Guide                          6,99 €
+  Analyser ses statistiques sociales                    Tableur + guide                4,99 €
+  Créer une identité de marque cohérente                Workbook                       6,99 €
+  Créer une page de vente                               Template + guide               6,99 €
 
 **Pistes de recherche :** TikTok, Instagram, YouTube Shorts, SEO,
 newsletter, copywriting, publicité, stratégie éditoriale, branding, UGC
@@ -423,20 +423,20 @@ et analytics.
   Comprendre les bases  Guide                                      Gratuit
   du web                                      
 
-  HTML et CSS :         Tutoriel                                    1,99 €
+  HTML et CSS :         Tutoriel                                    3,99 €
   première page                               
 
-  JavaScript : les      Fiches + exercices                          2,99 €
+  JavaScript : les      Fiches + exercices                          4,99 €
   notions                                     
   indispensables                              
 
   Git et GitHub pour    Guide pratique                              2,49 €
   débutants                                   
 
-  Créer son portfolio   Template + guide                            3,99 €
+  Créer son portfolio   Template + guide                            6,99 €
   développeur                                 
 
-  Déployer un site web  Tutoriel                                    2,99 €
+  Déployer un site web  Tutoriel                                    4,99 €
 
   Comprendre les API    Mini-guide                                  2,49 €
 
@@ -445,13 +445,13 @@ et analytics.
   Organiser un projet   Template                                    2,49 €
   avec GitHub Projects                        
 
-  Sécuriser ses comptes Checklist                                   1,99 €
+  Sécuriser ses comptes Checklist                                   3,99 €
   et appareils                                
 
-  Découvrir le cloud et Guide                                       2,99 €
+  Découvrir le cloud et Guide                                       4,99 €
   l'hébergement                               
 
-  Automatiser des       Tutoriel                                    4,99 €
+  Automatiser des       Tutoriel                                    9,99 €
   tâches avec des                             
   outils no-code                              
   ------------------------------------------------------------------------
@@ -465,13 +465,13 @@ collaboratifs et dépannage numérique.
   Produit                                  Format             Gratuit / payant
   ---------------------------------------- ---------------- ------------------
   Principes de design pour débutants       Mini-guide                  Gratuit
-  Palette de couleurs prête à utiliser     Pack                         1,49 €
-  Combinaisons de polices pour sites web   Guide                        1,49 €
+  Palette de couleurs prête à utiliser     Pack                         2,99 €
+  Combinaisons de polices pour sites web   Guide                        2,99 €
   Templates de posts sociaux               Pack                         2,49 €
-  Créer une présentation professionnelle   Modèles                      2,99 €
-  Bases de Figma                           Mini-formation               4,99 €
-  Créer une identité visuelle simple       Workbook                     3,99 €
-  Retoucher des images proprement          Tutoriel                     2,99 €
+  Créer une présentation professionnelle   Modèles                      4,99 €
+  Bases de Figma                           Mini-formation               9,99 €
+  Créer une identité visuelle simple       Workbook                     6,99 €
+  Retoucher des images proprement          Tutoriel                     4,99 €
   Créer des miniatures vidéo               Pack + guide                 2,49 €
   Principes d'UX/UI                        Guide                        3,49 €
 
@@ -483,15 +483,15 @@ visuelle, montage vidéo, photographie mobile et création de contenu.
   Produit                                  Format                     Gratuit / payant
   ---------------------------------------- ------------------------ ------------------
   Organiser sa semaine                     Planner                             Gratuit
-  Routine de travail réaliste              Guide                                1,49 €
+  Routine de travail réaliste              Guide                                2,99 €
   Gestion des tâches avec Notion           Template                             2,49 €
-  Méthode de concentration                 Guide                                1,99 €
+  Méthode de concentration                 Guide                                3,99 €
   Planifier un projet personnel            Workbook                             2,49 €
-  Organiser un déménagement                Checklist                            1,99 €
+  Organiser un déménagement                Checklist                            3,99 €
   Gérer ses documents administratifs       Classement + checklist               2,49 €
   Préparer un voyage avec un budget        Tableur                              2,49 €
-  Réduire la surcharge numérique           Guide                                1,99 €
-  Construire une routine d'apprentissage   Planner                              1,99 €
+  Réduire la surcharge numérique           Guide                                3,99 €
+  Construire une routine d'apprentissage   Planner                              3,99 €
 
 ## 4.10 Thème 9 --- Communication, langues et compétences humaines
 
@@ -500,10 +500,10 @@ visuelle, montage vidéo, photographie mobile et création de contenu.
   Écrire des e-mails professionnels            Exemples + guide              Gratuit
   Améliorer ses présentations orales           Guide                          2,49 €
   Anglais professionnel : expressions utiles   Fiches                         2,49 €
-  Préparer une prise de parole                 Workbook                       2,99 €
+  Préparer une prise de parole                 Workbook                       4,99 €
   Mieux négocier                               Guide                          3,49 €
   Donner et recevoir du feedback               Guide                          2,49 €
-  Gérer les conflits au travail                Mini-guide                     2,99 €
+  Gérer les conflits au travail                Mini-guide                     4,99 €
   Améliorer sa communication écrite            Exercices                      2,49 €
 
 ## 4.11 Thème 10 --- E-commerce et vente en ligne
@@ -517,28 +517,28 @@ visuelle, montage vidéo, photographie mobile et création de contenu.
   Choisir une niche et  Workbook                                    2,49 €
   étudier ses clients                         
 
-  Rédiger une fiche     Templates                                   1,99 €
+  Rédiger une fiche     Templates                                   3,99 €
   produit                                     
 
   Photographie produit  Guide                                       2,49 €
   au smartphone                               
 
-  Préparer ses          Checklist                                   1,49 €
+  Préparer ses          Checklist                                   2,99 €
   commandes                                   
 
   Service client        Scripts                                     2,49 €
   e-commerce                                  
 
-  Réduire les abandons  Guide                                       2,99 €
+  Réduire les abandons  Guide                                       4,99 €
   de panier : bases                           
 
-  Créer une boutique    Mini-formation                              4,99 €
+  Créer une boutique    Mini-formation                              9,99 €
   avec une solution                           
   no-code                                     
 
   Suivre ses ventes     Tableur                                     2,49 €
 
-  Préparer une campagne Kit                                         3,99 €
+  Préparer une campagne Kit                                         6,99 €
   de lancement                                
   ------------------------------------------------------------------------
 
@@ -547,22 +547,22 @@ visuelle, montage vidéo, photographie mobile et création de contenu.
   Produit                                         Format        Gratuit / payant
   ----------------------------------------------- ----------- ------------------
   Sécuriser ses comptes en 15 étapes              Checklist              Gratuit
-  Comprendre le phishing                          Guide                   1,49 €
-  Gestionnaire de mots de passe : bien démarrer   Guide                   1,99 €
-  Sécuriser son smartphone                        Checklist               1,49 €
+  Comprendre le phishing                          Guide                   2,99 €
+  Gestionnaire de mots de passe : bien démarrer   Guide                   3,99 €
+  Sécuriser son smartphone                        Checklist               2,99 €
   Protéger ses données personnelles               Guide                   2,49 €
-  Sécurité numérique pour indépendants            Kit                     3,99 €
-  Sauvegarder ses fichiers                        Tutoriel                1,99 €
+  Sécurité numérique pour indépendants            Kit                     6,99 €
+  Sauvegarder ses fichiers                        Tutoriel                3,99 €
 
 ## 4.13 Thème 12 --- Vie pratique et démarches
 
   Produit                                   Format                Gratuit / payant
   ----------------------------------------- ------------------- ------------------
   Organiser ses démarches administratives   Checklist                      Gratuit
-  Préparer un dossier de location           Checklist                       1,99 €
-  Préparer un dossier de candidature        Pack                            1,99 €
+  Préparer un dossier de location           Checklist                       3,99 €
+  Préparer un dossier de candidature        Pack                            3,99 €
   Comprendre les documents courants         Guide pédagogique               2,49 €
-  Organiser ses papiers importants          Template                        1,49 €
+  Organiser ses papiers importants          Template                        2,99 €
   Préparer un départ à l'étranger           Checklist                       2,49 €
   Préparer un dossier de voyage             Pack                            2,49 €
 
@@ -583,32 +583,32 @@ de médicaments et les recommandations médicales personnalisées.
   Produit                                       Format        Gratuit / payant
   --------------------------------------------- ----------- ------------------
   Suivre ses habitudes quotidiennes             Planner                Gratuit
-  Construire une routine du soir                Checklist               1,49 €
-  Préparer ses questions avant un rendez-vous   Fiche                   0,99 €
-  Organiser ses repas de la semaine             Planner                 1,99 €
-  Suivre ses activités et son temps de repos    Tableur                 1,99 €
+  Construire une routine du soir                Checklist               2,99 €
+  Préparer ses questions avant un rendez-vous   Fiche                   Gratuit  
+  Organiser ses repas de la semaine             Planner                 3,99 €
+  Suivre ses activités et son temps de repos    Tableur                 3,99 €
 
 ## 4.15 Thème 14 --- Ressources pour parents et famille
 
   Produit                                  Format         Gratuit / payant
   ---------------------------------------- ------------ ------------------
   Organiser le planning familial           Planner                 Gratuit
-  Préparer la rentrée scolaire             Checklist                1,49 €
-  Suivre les dépenses familiales           Tableur                  1,99 €
-  Organiser les activités et rendez-vous   Calendrier               1,49 €
-  Préparer un voyage en famille            Checklist                1,99 €
+  Préparer la rentrée scolaire             Checklist                2,99 €
+  Suivre les dépenses familiales           Tableur                  3,99 €
+  Organiser les activités et rendez-vous   Calendrier               2,99 €
+  Préparer un voyage en famille            Checklist                3,99 €
 
 ## 4.16 Thème 15 --- Ressources pour artisans, commerçants et petites structures
 
   Produit                           Format                 Gratuit / payant
   --------------------------------- -------------------- ------------------
   Checklist de présence en ligne    PDF                             Gratuit
-  Répondre aux avis clients         Scripts                          1,99 €
-  Créer une fiche de présentation   Template                         1,49 €
-  Suivre ses dépenses et recettes   Tableur                          2,99 €
+  Répondre aux avis clients         Scripts                          3,99 €
+  Créer une fiche de présentation   Template                         2,99 €
+  Suivre ses dépenses et recettes   Tableur                          4,99 €
   Calendrier promotionnel annuel    Template                         2,49 €
   Fidéliser ses clients             Guide                            2,49 €
-  Organiser les rendez-vous         Modèle de planning               1,99 €
+  Organiser les rendez-vous         Modèle de planning               3,99 €
 
 ## 4.17 Priorisation initiale
 
@@ -648,42 +648,42 @@ gratuit pour forcer un achat.
   Série                   Épisode gratuit         Épisodes payants
   ----------------------- ----------------------- -----------------------
   Maîtriser l'IA au       1\. Comprendre et bien  2\. Prompts utiles
-  quotidien               démarrer                (1,99 €) ; 3. Workflows
-                                                  (2,99 €) ; 4.
-                                                  Automatisations (4,99
+  quotidien               démarrer                (3,99 €) ; 3. Workflows
+                                                  (4,99 €) ; 4.
+                                                  Automatisations (9,99
                                                   €)
 
-  Décrocher un emploi     1\. Faire le diagnostic 2\. CV ATS (1,99 €) ;
+  Décrocher un emploi     1\. Faire le diagnostic 2\. CV ATS (3,99 €) ;
                           de son CV               3. LinkedIn (2,49 €) ;
-                                                  4. Entretiens (3,99 €)
+                                                  4. Entretiens (6,99 €)
 
   Lancer son activité     1\. Valider une idée    2\. Construire son
                                                   offre (2,49 €) ; 3.
                                                   Trouver des clients
-                                                  (3,99 €) ; 4. Organiser
-                                                  son activité (4,99 €)
+                                                  (6,99 €) ; 4. Organiser
+                                                  son activité (9,99 €)
 
   Développer sa présence  1\. Auditer son profil  2\. Calendrier de
-  sociale                                         contenu (1,99 €) ; 3.
-                                                  Vidéos courtes (2,99 €)
+  sociale                                         contenu (3,99 €) ; 3.
+                                                  Vidéos courtes (4,99 €)
                                                   ; 4. Mesurer ses
                                                   résultats (3,49 €)
 
   Gérer son budget        1\. Faire son bilan     2\. Tableur avancé
-                          mensuel                 (1,99 €) ; 3. Plan
+                          mensuel                 (3,99 €) ; 3. Plan
                                                   d'épargne (2,49 €) ; 4.
                                                   Comprendre les frais
                                                   (2,49 €)
 
   Créer son portfolio     1\. Définir les projets 2\. Structure du
-                          à montrer               portfolio (1,99 €) ; 3.
-                                                  Modèle de site (3,99 €)
+                          à montrer               portfolio (3,99 €) ; 3.
+                                                  Modèle de site (6,99 €)
                                                   ; 4. Présenter ses
                                                   projets (2,49 €)
 
-  Sécuriser ses comptes   1\. Faire un audit      2\. Mots de passe (1,49
+  Sécuriser ses comptes   1\. Faire un audit      2\. Mots de passe (2,99
                           rapide                  €) ; 3. Sauvegardes
-                                                  (1,99 €) ; 4.
+                                                  (3,99 €) ; 4.
                                                   Protection avancée
                                                   (2,49 €)
   -----------------------------------------------------------------------
@@ -705,18 +705,18 @@ déduction ou un prix de mise à niveau.
 ## 6.1 Prix maximum
 
 Le prix public d'un produit numérique individuel ne doit pas dépasser
-**4,99 € TTC** dans la grille de lancement.
+**9,99 € TTC** dans la grille de lancement.
 
   Niveau                    Prix Usage
   -------------------- --------- --------------------------------------
   Découverte             Gratuit Fiche, extrait ou ressource d'entrée
-  Mini-ressource          0,99 € Checklist ou fiche
-  Petit guide             1,49 € Guide court et ciblé
-  Ressource pratique      1,99 € Template, pack court
-  Guide approfondi        2,49 € Méthode complète
-  Pack                    2,99 € Plusieurs fichiers ou modèles
-  Kit avancé              3,99 € Guide + modèles + exercices
-  Mini-formation          4,99 € Parcours court avec livrables
+  Mini-ressource          2,99 € Checklist ou fiche
+  Petit guide             2,99 € Guide court et ciblé
+  Ressource pratique      3,99 € Template, pack court
+  Guide approfondi        4,49 € Méthode complète
+  Pack                    5,99 € Plusieurs fichiers ou modèles
+  Kit avancé              6,99 € Guide + modèles + exercices
+  Mini-formation          9,99 € Parcours court avec livrables
 
 Les frais de paiement, taxes, remboursements, commissions éventuelles et
 coûts de production doivent être pris en compte. Un prix bas n'est
@@ -726,11 +726,10 @@ transaction restent maîtrisés.
 ## 6.2 Packs
 
 Les packs peuvent réunir plusieurs ressources à un prix inférieur à la
-somme des achats séparés, tout en restant sous 4,99 € lorsque le plafond
-est appliqué à tous les produits du catalogue.
+somme des achats séparés, tout en restant sous 14,99 € (le plafond de 9,99 € vise les produits individuels).
 
-Exemples : - Pack CV + LinkedIn : 4,49 €. - Pack premiers clients : 4,99
-€. - Pack budget débutant : 3,99 €. - Pack contenu social : 4,99 €.
+Exemples : - Pack CV + LinkedIn : 7,99 €. - Pack premiers clients : 12,99
+€. - Pack budget débutant : 6,99 €. - Pack contenu social : 12,99 €.
 
 ## 6.3 Abonnement éventuel
 
@@ -962,7 +961,7 @@ tablette et téléphone.
 **Important :** choisir un prestataire adapté au pays de l'entreprise,
 au statut juridique, aux ventes de contenus numériques et, le cas
 échéant, au fonctionnement d'une marketplace. Vérifier les frais sur les
-petites transactions : ils peuvent peser lourd sur un prix de 0,99 €.
+petites transactions : ils peuvent peser lourd sur un prix de 2,99 €.
 
 ## 8.4 Livraison numérique
 
@@ -2015,20 +2014,20 @@ présenté et réellement utile.
   Produit de départ                      Prix
   --------------------------------- ---------
   Checklist CV professionnel          Gratuit
-  Modèle CV ATS                        1,99 €
-  Pack messages de candidature         1,99 €
-  Guide entretien d'embauche           2,99 €
+  Modèle CV ATS                        3,99 €
+  Pack messages de candidature         3,99 €
+  Guide entretien d'embauche           4,99 €
   Comprendre l'IA générative          Gratuit
-  Pack prompts pour le travail         1,99 €
-  Workflows IA pour débutants          4,99 €
+  Pack prompts pour le travail         3,99 €
+  Workflows IA pour débutants          9,99 €
   Planner budget mensuel              Gratuit
   Tableur budget avancé                2,49 €
   Checklist lancement freelance       Gratuit
   Construire son offre de service      2,49 €
-  Trouver ses premiers clients         4,99 €
-  Calendrier de contenu social         1,99 €
-  Pack modèles de posts                2,99 €
-  Créer son portfolio                  3,99 €
+  Trouver ses premiers clients         9,99 €
+  Calendrier de contenu social         3,99 €
+  Pack modèles de posts                4,99 €
+  Créer son portfolio                  6,99 €
 
 Objectif : obtenir des retours et des ventes sur ces ressources avant
 d'étendre le catalogue.

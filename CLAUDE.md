@@ -1,6 +1,6 @@
 # Clairivo
 
-Boutique française de ressources numériques (guides, modèles, mini-cours), de 0,99 € à 4,99 €.
+Boutique française de ressources numériques (guides, modèles, mini-cours), de 2,99 € à 9,99 € (packs jusqu'à 14,99 €).
 
 ## À lire en début de session
 - `CONTEXT.md` : état, décisions, questions ouvertes.

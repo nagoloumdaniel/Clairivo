@@ -47,20 +47,25 @@ Tous les quatre passent par un seul prestataire. Recommandation : **Stripe** ave
 - Le bouton Apple Pay / Google Pay apparaît en haut de la fiche produit et du checkout (achat en un geste, sans formulaire). C'est le plus gros gain de conversion mobile.
 - Aucun numéro de carte ne touche ton serveur (Clairivo reste hors du périmètre PCI le plus lourd, SAQ A).
 
-### Point d'alerte sur les petits prix (à trancher en phase 0)
+### Grille de prix décidée (prix plancher 2,99 €)
 
-Les frais fixes pèsent lourd sur des produits à 0,99 € et 1,49 €. Ordre de grandeur avec un tarif type Stripe cartes européennes (environ 1,5 % + 0,25 €, **à vérifier sur stripe.com/pricing avec ton pays d'établissement**) :
+Décision du 5 novembre 2026 : aucun produit payant sous 2,99 € TTC. Les prix du cahier ont été remontés d'un cran, avec une échelle terminée en ,99 :
 
-| Prix TTC | Frais approximatifs | Part des frais |
+| Ancien prix | Nouveau prix | Part des frais Stripe (estimation) |
 |---|---|---|
-| 0,99 € | 0,27 € | 27 % |
-| 1,49 € | 0,27 € | 18 % |
-| 1,99 € | 0,28 € | 14 % |
-| 4,99 € | 0,33 € | 6,5 % |
+| 0,99 € (fiche) | Gratuit (aimant à clients) | n/a |
+| 1,49 € | 2,99 € | ~10 % |
+| 1,99 € | 3,99 € | ~8 % |
+| 2,99 € | 4,99 € | ~6,5 % |
+| 3,99 € | 6,99 € | ~5 % |
+| 4,99 € (mini-formation) | 9,99 € | ~4 % |
+| Packs (jusqu'à 4,99 €) | 7,99 € à 14,99 € | ~3 à 5 % |
 
-À cela s'ajoutent la TVA (environ 17 % du TTC en France), les coûts de contenu et l'acquisition. Un produit à 0,99 € laisse très peu de marge.
+Les frais sont calculés avec un tarif type Stripe cartes européennes (environ 1,5 % + 0,25 €). **À vérifier sur stripe.com/pricing pour ton compte.** À cela s'ajoutent la TVA (20 % en France si tu y es assujetti), les coûts de contenu et l'acquisition.
 
-Recommandation : **panier multi-produits** (on paie une fois les frais fixes), **packs** mis en avant, et **aucun produit payant sous 1,49 €** au lancement (le 0,99 € du cahier reste possible en complément de panier). Décision à valider avec toi (voir « Questions ouvertes »).
+Pourquoi ces marges : le frais fixe de 0,25 € pèse trois fois moins qu'à 0,99 €. Les packs (plafond 14,99 €) tirent le panier moyen vers le haut, et c'est là que la marge se fait. Les 5 produits gratuits restent le moteur d'acquisition. Les prix sont des hypothèses : le test de la phase 15 (premières ventes) décide s'il faut ajuster, avec `ab-testing` et un seuil fixé d'avance.
+
+Micro-entreprise : vérifier en phase 0 sur impots.gouv.fr et le guichet OSS le régime de TVA applicable aux ventes de contenus numériques aux particuliers de l'UE (franchise en base, seuil des 10 000 € de ventes à distance dans l'UE, passage à l'OSS). Les textes officiels font référence, avec date de consultation dans `docs/conformite.md`.
 
 ### Stripe direct ou « Merchant of Record » (Paddle, Lemon Squeezy, Polar)
 
@@ -69,10 +74,10 @@ Recommandation : **panier multi-produits** (on paie une fois les frais fixes), *
 | Qui est le vendeur légal | Toi | Le prestataire |
 | TVA UE / monde | Tu t'enregistres (guichet OSS en UE) et déclares | Le prestataire collecte et reverse |
 | Frais indicatifs | environ 1,5 % + 0,25 € (+ frais Stripe Tax) | environ 5 % + 0,50 $ (à vérifier) |
-| Sur un produit à 1,99 € | ~14 % | ~25 % ou plus |
+| Sur un produit à 3,99 € | ~8 % | ~17 % ou plus |
 | Contrôle de l'expérience (Apple Pay, UX) | Total | Partiel, checkout du prestataire |
 
-Les frais fixes d'un Merchant of Record rendent le modèle « petits prix » presque impossible. Recommandation : **Stripe direct**, avec Stripe Tax pour le calcul de la TVA. Cela suppose une entité légale qui vend et déclare la TVA (phase 0). Sources à revalider avant décision : pages tarifs officielles de Stripe, Paddle, Lemon Squeezy, Polar (les chiffres des blogs comparatifs divergent).
+Les frais fixes d'un Merchant of Record pèsent encore beaucoup sur des prix de 2,99 € à 4,99 €. **Décision : Stripe direct**, avec Stripe Tax pour le calcul de la TVA. Cela suppose une entité légale qui vend et déclare la TVA (phase 0). Sources à revalider avant décision : pages tarifs officielles de Stripe, Paddle, Lemon Squeezy, Polar (les chiffres des blogs comparatifs divergent).
 
 ### Flux de paiement cible (sécurité)
 
@@ -149,7 +154,7 @@ Les frais fixes d'un Merchant of Record rendent le modèle « petits prix » pre
 **Tâches**
 1. Recherche d'inspiration réelle avant de dessiner (Awwwards, Mobbin, Dribbble, boutiques de produits numériques) avec sources citées. Rester éditorial, coloré, premium (cahier chapitre 9).
 2. Tokens : palette du cahier (`#FFF9F2`, `#FF7048`, `#7657E8`, `#FFD45A`, `#75D7B0`, `#F58DB7`, `#20202A`, `#686575`, `#E9E4E0`), couleurs sémantiques, échelle d'espacement unique, rayons, ombres, mode clair et sombre complet. Contraste WCAG 2.2 AA vérifié pour chaque couple.
-3. Typographie : titres Plus Jakarta Sans ou Sora, texte Inter (le cahier l'impose pour le texte ; la règle anti-IA déconseille Inter par défaut, donc à valider avec toi, voir « Questions ouvertes »).
+3. Typographie : titres Plus Jakarta Sans ou Sora, texte Inter (décision du 5 novembre 2026, conforme au cahier). Éviter l'effet « défaut » par un vrai travail de hiérarchie, d'espacement et de graisses, validé avec `anti-vibecode`.
 4. Composants : bouton, champ, carte produit, badge honnête, barre de progression de série, modale, tiroir mobile, skeleton, toast, états vide/erreur/chargement.
 5. Illustrations vectorielles originales par catégorie (à partir de ta direction, pas de banque d'images mélangée). Icônes animées avec intention.
 6. Mouvement : Motion (Framer Motion) pour hero, cartes, filtres, succès de paiement, favoris. `prefers-reduced-motion` respecté. Durées courtes.
@@ -405,4 +410,4 @@ Dans cet ordre, selon les chiffres réels :
 
 ## Questions ouvertes
 
-Voir `CONTEXT.md`.
+Voir `CONTEXT.md`. Décisions du 5 novembre 2026 : micro-entreprise en France, Stripe direct, prix plancher 2,99 €, compte créé à l'achat par lien magique, Inter pour le texte, logo fourni plus tard, pays servis : Europe francophone (France, Belgique, Suisse, Luxembourg).
