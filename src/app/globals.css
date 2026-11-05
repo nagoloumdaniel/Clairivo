@@ -105,3 +105,55 @@ p { text-wrap: pretty; }
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Encoches de la carte produit : la découpe est peinte de la couleur du fond (ivoire), coins de l'image arrondis. */
+.notch {
+  --r: 12px;
+  position: absolute;
+  background: var(--ivoire);
+}
+.notch::before,
+.notch::after {
+  content: "";
+  position: absolute;
+  width: var(--r);
+  height: var(--r);
+}
+.notch-tl {
+  top: 0;
+  left: 0;
+  max-width: 75%;
+  padding: 0 8px 8px 0;
+  border-bottom-right-radius: var(--r);
+}
+.notch-tl::before,
+.notch-tl::after {
+  background: radial-gradient(circle at 100% 100%, transparent calc(var(--r) - 0.5px), var(--ivoire) var(--r));
+}
+.notch-tl::before {
+  top: 100%;
+  left: 0;
+}
+.notch-tl::after {
+  top: 0;
+  left: 100%;
+}
+.notch-br {
+  right: 0;
+  bottom: 0;
+  max-width: 60%;
+  padding: 8px 0 0 8px;
+  border-top-left-radius: var(--r);
+}
+.notch-br::before,
+.notch-br::after {
+  background: radial-gradient(circle at 0 0, transparent calc(var(--r) - 0.5px), var(--ivoire) var(--r));
+}
+.notch-br::before {
+  right: 0;
+  bottom: 100%;
+}
+.notch-br::after {
+  right: 100%;
+  bottom: 0;
+}

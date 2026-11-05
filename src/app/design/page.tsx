@@ -180,6 +180,7 @@ export default function Design() {
             href="/design"
             cover={{ fond: "#75D7B0", encre: "#20202A", accent: "#FFF9F2", format: "Checklist", sujet: "Freelance", forme: "bandes", droite: true }}
             titre="Checklist lancement freelance"
+            categorie="Organisation et productivité"
             pour="Ne rien oublier avant de facturer."
             prixCents={299}
           />
@@ -218,7 +219,7 @@ export default function Design() {
       <Section id="mouvement" titre="Mouvement">
         <ul className="max-w-[60ch] list-disc space-y-2 pl-5 text-encre-2">
           <li>Un seul moment mis en scène par page (sur l&apos;accueil : le déploiement des couvertures).</li>
-          <li>Micro-interactions de 150 à 200 ms : appui des boutons, relief des cartes au survol, barre de série.</li>
+          <li>Micro-interactions de 150 à 200 ms : appui des boutons, barre de série. Aucun effet de survol (zoom, déplacement) sur les cartes.</li>
           <li>Seules les propriétés transform et opacity sont animées, sauf la largeur de la barre de série.</li>
           <li>Tout est neutralisé quand le système demande moins de mouvement.</li>
         </ul>
