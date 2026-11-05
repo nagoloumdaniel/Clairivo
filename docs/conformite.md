@@ -37,7 +37,9 @@ Action produit : suivre dans l'admin le chiffre d'affaires cumulé par pays de l
 ### 2.3 Belgique, Luxembourg, Suisse
 
 - Belgique et Luxembourg : membres de l'UE, même règle que 2.2.
-- Suisse : hors UE. **Non vérifié** : règles de TVA suisse sur les services électroniques vendus par une entreprise étrangère à des particuliers suisses (seuil, obligation d'inscription). À rechercher sur le site de l'Administration fédérale des contributions avant d'ouvrir les ventes en Suisse. Option raisonnable au lancement : ne vendre qu'en France, Belgique et Luxembourg, et ouvrir la Suisse plus tard.
+- Suisse : hors UE. **Non vérifié** : règles de TVA suisse sur les services électroniques vendus par une entreprise étrangère à des particuliers suisses (seuil, obligation d'inscription). À rechercher sur le site de l'Administration fédérale des contributions avant d'ouvrir les ventes en Suisse. Option retenue au lancement : ne vendre qu'en France, Belgique et Luxembourg, et ouvrir la Suisse plus tard.
+
+Recherche du 5 novembre 2026 (sources secondaires : cabinets, pas l'Administration fédérale des contributions) : une entreprise étrangère devient assujettie à la TVA suisse quand son chiffre d'affaires mondial en prestations imposables atteint 100 000 CHF par an, avec un représentant fiscal en Suisse. Les sources divergent sur la règle des services électroniques vendus à des particuliers (seuil mondial ou seuil suisse). **Non vérifié** : lecture de l'article 10 de la loi fédérale sur la TVA (LTVA) et de la page de l'AFC. Tant que ce n'est pas lu, la Suisse reste fermée.
 
 ## 3. Droit de rétractation sur contenu numérique (lu)
 
@@ -53,7 +55,9 @@ Conséquences pour le checkout (à construire en phase 6) :
 - Une case à cocher non précochée, avec un texte clair, qui couvre les points 1 et 2. Sans la case, pas de paiement.
 - L'e-mail de confirmation reprend cet accord (point 3). Il est conservé avec la commande, horodaté.
 - Les exceptions du code de la consommation s'interprètent strictement. Si la case manque, le client a 14 jours pour se rétracter.
-- **Non vérifié** : l'alinéa exact de L221-13 sur le contenu de la confirmation, et les obligations d'information précontractuelle (articles L221-5 et suivants). À lire en entier avant la rédaction des CGV.
+- Lecture partielle de L221-13 (recherche du 5 novembre 2026, sources secondaires, la page Légifrance n'a pas été ouverte) : le professionnel envoie au consommateur, sur support durable et dans un délai raisonnable après la conclusion, la confirmation du contrat avec les informations de L221-5 (sauf celles déjà remises sur support durable) et le formulaire type de rétractation. Pour un contenu numérique, cette confirmation arrive au plus tard avant le début de l'exécution. Le support durable est défini à l'article liminaire du code (un e-mail convient).
+- Conséquence : l'e-mail de commande contient les informations précontractuelles, le formulaire type de rétractation et la mention de l'accord exprès. À rédiger avec le texte officiel de L221-5 sous les yeux.
+- **Non vérifié** : le texte officiel complet de L221-13 et de L221-5 (à ouvrir sur Légifrance avant la rédaction des CGV et de l'e-mail de confirmation).
 
 ## 4. Cookies et traceurs (lu)
 
