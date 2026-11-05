@@ -11,12 +11,8 @@ Phase 2 : socle Next.js + TypeScript strict + Tailwind + Motion, Drizzle, Vitest
 ## Phase 2 : avancement (2026-11-05)
 - Fait : Next.js (App Router), TypeScript strict, Tailwind, Vitest, Playwright (config + 1 test), CI GitHub Actions (lint, typecheck, test, build, audit prod niveau high), structure `src/domains/*`, schéma Drizzle complet + migration `drizzle/0000_*.sql` générée (non appliquée). `lint`, `typecheck`, `test`, `build` passent.
 - `npm audit` : 5 alertes modérées en prod via Sentry (glob/minimatch), pas de correctif sans downgrade majeur. CI bloque à partir de `high`.
-- Reste : Sentry (attend un DSN), README, modèles issues/PR, description + topics du dépôt, migrations sur base de test (attend la base), preview Vercel, exécution Playwright.
-
-## Blocage base de données (2026-11-05)
-- Neon : création refusée par le connecteur (organisation gérée par Vercel).
-- Supabase connecté, aucun projet Clairivo (3 projets existants : tradingagent actif, tradingagent_test et Zolya en pause). Coût d'un projet actif de plus non vérifié.
-- En attente de ton accord : créer un projet « clairivo » (région UE) via Supabase, ou créer la base toi-même et me donner `DATABASE_URL`. Ma recommandation : Supabase UE après vérification du coût.
+- Fait (suite) : projet Supabase `clairivo` créé (réf `snlovboelaxykxpewtxm`, eu-west-3 Paris). Migrations 0000 et 0001 (RLS sans politique sur les 14 tables) appliquées via le connecteur. Zolya mise en pause par toi pour libérer un slot. Sentry câblé (`@sentry/nextjs` 10.78.0, v11.10.0 cassée), actif seulement si DSN présent, masquage PII. Projet Vercel `clairivo` créé et relié au dépôt via la CLI. PR #6 en draft. Playwright passe en local.
+- Reste : `DATABASE_URL` (mot de passe de la base à définir par toi dans Supabase, Project Settings, Database), DSN Sentry (`npx @sentry/cli login` ou token, puis projet Next.js), variables d'env dans Vercel, baseline de la table de suivi Drizzle (migrations appliquées hors `drizzle-kit migrate`), preview Vercel à vérifier, CI à vérifier.
 
 ## Direction visuelle de la landing, proposée (à valider)
 - Concept « la couverture » : hero en aplat corail `#FF7048`, texte encre `#20202A` (jamais de blanc sur corail), éventail de 3 couvertures vectorielles originales (formats, pas de faux titres), sections de lecture sur ivoire `#FFF9F2`, mode sombre complet.
