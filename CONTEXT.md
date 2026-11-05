@@ -1,12 +1,17 @@
 # CONTEXT Clairivo
 
-Mis à jour : 2026-11-05. Branche : `feat/foundations` (créée depuis main, pas encore poussée, aucun code).
+Mis à jour : 2026-11-05. Branche : `feat/foundations` (pas encore poussée).
 
 ## État
 Phase 0 terminée côté documents et Stripe test. Phase 2 (fondations) démarrée. PR ouvertes non fusionnées : #4 (`docs/phase-1-cadrage`, prix du chapitre 23 et décisions) et #5 (`docs/validation-marche`, seuils Go/Stop). Leur contenu n'est pas encore dans ce fichier tant qu'elles ne sont pas fusionnées.
 
 ## Objectif en cours
 Phase 2 : socle Next.js + TypeScript strict + Tailwind + Motion, Drizzle, Vitest + Playwright, CI GitHub Actions, Sentry. Puis landing avec liste d'attente (phase 1), puis phases 3, 4, 5.
+
+## Phase 2 : avancement (2026-11-05)
+- Fait : Next.js (App Router), TypeScript strict, Tailwind, Vitest, Playwright (config + 1 test), CI GitHub Actions (lint, typecheck, test, build, audit prod niveau high), structure `src/domains/*`, schéma Drizzle complet + migration `drizzle/0000_*.sql` générée (non appliquée). `lint`, `typecheck`, `test`, `build` passent.
+- `npm audit` : 5 alertes modérées en prod via Sentry (glob/minimatch), pas de correctif sans downgrade majeur. CI bloque à partir de `high`.
+- Reste : Sentry (attend un DSN), README, modèles issues/PR, description + topics du dépôt, migrations sur base de test (attend la base), preview Vercel, exécution Playwright.
 
 ## Blocage base de données (2026-11-05)
 - Neon : création refusée par le connecteur (organisation gérée par Vercel).
