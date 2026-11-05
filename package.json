@@ -16,7 +16,7 @@
     "audit:ci": "npm audit --omit=dev --audit-level=high"
   },
   "dependencies": {
-    "@sentry/nextjs": "^11.10.0",
+    "@sentry/nextjs": "^10.78.0",
     "drizzle-orm": "^0.45.4",
     "motion": "^14.9.1",
     "next": "^16.4.5",
