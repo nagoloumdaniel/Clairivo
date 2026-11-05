@@ -1,12 +1,24 @@
 # CONTEXT Clairivo
 
-Mis à jour : 2026-11-05. Branche : `docs/phase-0-droits`.
+Mis à jour : 2026-11-05. Branche : `feat/foundations` (créée depuis main, pas encore poussée, aucun code).
 
 ## État
-Phase de cadrage. Aucun code. Fichiers : `cahier_des_charges_clairivo.md`, `ROADMAP.md`.
+Phase 0 terminée côté documents et Stripe test. Phase 2 (fondations) démarrée. PR ouvertes non fusionnées : #4 (`docs/phase-1-cadrage`, prix du chapitre 23 et décisions) et #5 (`docs/validation-marche`, seuils Go/Stop). Leur contenu n'est pas encore dans ce fichier tant qu'elles ne sont pas fusionnées.
 
 ## Objectif en cours
-Valider la roadmap, puis phase 0 (décisions, entité, Stripe, domaine, logo).
+Phase 2 : socle Next.js + TypeScript strict + Tailwind + Motion, Drizzle, Vitest + Playwright, CI GitHub Actions, Sentry. Puis landing avec liste d'attente (phase 1), puis phases 3, 4, 5.
+
+## Blocage base de données (2026-11-05)
+- Neon : création refusée par le connecteur (organisation gérée par Vercel).
+- Supabase connecté, aucun projet Clairivo (3 projets existants : tradingagent actif, tradingagent_test et Zolya en pause). Coût d'un projet actif de plus non vérifié.
+- En attente de ton accord : créer un projet « clairivo » (région UE) via Supabase, ou créer la base toi-même et me donner `DATABASE_URL`. Ma recommandation : Supabase UE après vérification du coût.
+
+## Direction visuelle de la landing, proposée (à valider)
+- Concept « la couverture » : hero en aplat corail `#FF7048`, texte encre `#20202A` (jamais de blanc sur corail), éventail de 3 couvertures vectorielles originales (formats, pas de faux titres), sections de lecture sur ivoire `#FFF9F2`, mode sombre complet.
+- Sora pour les titres, Inter pour le texte. Alignement à gauche, mise en page asymétrique.
+- Formulaire : e-mail, vote pour un univers (emploi, IA, freelancing, marketing social, budget) pour alimenter la grille de la phase 1, case de consentement non précochée.
+- Un seul moment animé (déploiement des couvertures), `prefers-reduced-motion` respecté. Aucun compteur, témoignage ou badge inventé. Pas de logo inventé : nom en texte simple en attendant.
+- Titre provisoire : « Des guides courts pour avancer, dès 2,99 €. »
 
 ## Décisions prises
 - Paiement : Stripe direct (Payment Element + Express Checkout Element) pour Visa, Mastercard, Apple Pay, Google Pay.
