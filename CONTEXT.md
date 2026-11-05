@@ -1,6 +1,6 @@
 # CONTEXT Clairivo
 
-Mis à jour : 2026-11-05. Branche : `docs/stripe-setup`.
+Mis à jour : 2026-11-05. Branche : `docs/phase-0-droits`.
 
 ## État
 Phase de cadrage. Aucun code. Fichiers : `cahier_des_charges_clairivo.md`, `ROADMAP.md`.
@@ -23,7 +23,8 @@ Valider la roadmap, puis phase 0 (décisions, entité, Stripe, domaine, logo).
 ## Phase 0 : avancement (2026-11-05)
 - Fait : `docs/conformite.md` (franchise TVA, OSS, rétractation, cookies), points non vérifiés marqués.
 - À faire par toi : compte Stripe et vérification d'identité, achat du domaine après recherche INPI/EUIPO, coordonnées pour les mentions légales, question au SIE sur franchise + OSS.
-- À faire par moi : registre des droits des 15 premiers produits, TVA suisse, lecture complète de L221-13 et L221-5.
+- Fait (2026-11-05) : `docs/registre-droits.md` (gabarit, 15 produits), recherche TVA suisse et L221-13 (sources secondaires, voir conformite.md).
+- À faire par moi : lire les textes officiels de L221-13, L221-5 et art. 10 LTVA.
 
 ## Stripe (2026-11-05)
 - Compte Stripe « Clairivo » connecté au connecteur MCP, mode test uniquement (`acct_1UYFNaRVHCJY7Fsk`). Pas de mode live.
@@ -34,6 +35,7 @@ Valider la roadmap, puis phase 0 (décisions, entité, Stripe, domaine, logo).
 - Env : `.env.example` (noms) et `.env.local` (ignoré par git) synchronisés. Clés Stripe à renseigner (le connecteur ne les expose pas), webhook de test à créer en phase 6.
 
 ## Questions ouvertes
+0. Chapitre 23 du cahier : prix de départ pas alignés sur la grille (ex. 2,49 € sous le plancher de 2,99 €). Proposition : appliquer la grille (2,49 → 2,99 ; 3,99 → 3,99 ; 4,99 → 4,99 ; 6,99 et 9,99 inchangés). À valider.
 1. Logo : à fournir plus tard. Rien n'est inventé en attendant.
 2. Franchise en base et OSS : comment s'articulent-elles au-delà de 10 000 € de ventes UE ? À confirmer auprès du SIE et dans le BOFiP.
 3. TVA suisse sur les services électroniques : à rechercher avant d'ouvrir la Suisse.
