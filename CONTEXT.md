@@ -1,6 +1,6 @@
 # CONTEXT Clairivo
 
-Mis à jour : 2026-11-05. Branche : `docs/pricing` (basée sur `docs/roadmap`).
+Mis à jour : 2026-11-05. Branche : `docs/phase-0`.
 
 ## État
 Phase de cadrage. Aucun code. Fichiers : `cahier_des_charges_clairivo.md`, `ROADMAP.md`.
@@ -18,10 +18,17 @@ Valider la roadmap, puis phase 0 (décisions, entité, Stripe, domaine, logo).
 - 2026-11-05 : pays servis = Europe francophone (France, Belgique, Suisse, Luxembourg), en français.
 - 2026-11-05 : landing avec liste d'attente en phase 1 acceptée.
 
+## Phase 0 : avancement (2026-11-05)
+- Fait : `docs/conformite.md` (franchise TVA, OSS, rétractation, cookies), points non vérifiés marqués.
+- À faire par toi : compte Stripe et vérification d'identité, achat du domaine après recherche INPI/EUIPO, coordonnées pour les mentions légales, choix de la licence, question au SIE sur franchise + OSS.
+- À faire par moi : registre des droits des 15 premiers produits, TVA suisse, lecture complète de L221-13 et L221-5.
+
 ## Questions ouvertes
-1. Logo : à fournir plus tard par l'utilisateur. Rien n'est inventé en attendant.
-2. Régime de TVA de la micro-entreprise pour les ventes numériques aux particuliers de l'UE (franchise en base, seuil UE, OSS) : à vérifier en phase 0 sur les sources officielles.
-3. Création de la branche `main` sur GitHub (dépôt distant vide, le hook git-guard bloque le push vers main).
+1. Logo : à fournir plus tard. Rien n'est inventé en attendant.
+2. Franchise en base et OSS : comment s'articulent-elles au-delà de 10 000 € de ventes UE ? À confirmer auprès du SIE et dans le BOFiP.
+3. TVA suisse sur les services électroniques : à rechercher. Reco : lancer sans la Suisse.
+4. Licence du dépôt (MIT, Apache 2.0, propriétaire). Reco : propriétaire (code non ouvert), car le produit est commercial.
+5. Prix affichés en franchise de TVA : on affiche des prix sans TVA, donc 2,99 € est le prix payé. OK pour toi ?
 
 ## Points à confirmer
 - Tarifs Stripe exacts de ton pays (chiffres de la roadmap = ordres de grandeur, non officiels).
