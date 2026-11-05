@@ -1,12 +1,19 @@
 # CONTEXT Clairivo
 
-Mis à jour : 2026-11-05. Branche : `feat/landing-waitlist` (empilée sur `feat/foundations`, PR #6).
+Mis à jour : 2026-11-06. Branche : `feat/design-system` (PR #8, base `feat/landing-waitlist`, elle-même empilée sur `feat/foundations`, PR #6).
 
 ## État
 Phase 0 terminée côté documents et Stripe test. Phase 2 (fondations) démarrée. PR ouvertes non fusionnées : #4 (`docs/phase-1-cadrage`, prix du chapitre 23 et décisions) et #5 (`docs/validation-marche`, seuils Go/Stop). Leur contenu n'est pas encore dans ce fichier tant qu'elles ne sont pas fusionnées.
 
 ## Objectif en cours
 Phase 2 : socle Next.js + TypeScript strict + Tailwind + Motion, Drizzle, Vitest + Playwright, CI GitHub Actions, Sentry. Puis landing avec liste d'attente (phase 1), puis phases 3, 4, 5.
+
+## Phase 3 : design system (2026-11-06, branche feat/design-system)
+- Fait : composants `src/components/ui/` (bouton, champ, badge, carte produit à encoches, squelette, état vide/erreur, barre de série, modale, tiroir, notification, 5 illustrations par univers, 3 icônes animées), page interne `/design` (noindex) avec contrastes calculés, test unitaire des contrastes AA.
+- Validé par l'utilisateur : carte produit (dessin papier : onglet catégorie à gauche en haut, prix en bas à droite, titre + badge, sous-titre; sans hover animé).
+- Retours UI enregistrés dans la mémoire du projet (retours-ui-clairivo.md) : pas de focus ring sur les champs, pas de hover sur les cartes.
+- Reste : validation visuelle des illustrations et icônes, recherche d'inspiration citée (la recherche web générique n'a rien donné sur Awwwards/Mobbin, à refaire avec le connecteur Mobbin une fois autorisé), maquettes Figma des écrans clés, audit `better`/`ui-ux-checker` en fin d'écran, test E2E sur /design.
+- Les encoches de la carte sont peintes en ivoire : la carte doit être posée sur fond ivoire.
 
 ## Phase 2 : avancement (2026-11-05)
 - Fait : Next.js (App Router), TypeScript strict, Tailwind, Vitest, Playwright (config + 1 test), CI GitHub Actions (lint, typecheck, test, build, audit prod niveau high), structure `src/domains/*`, schéma Drizzle complet + migration `drizzle/0000_*.sql` générée (non appliquée). `lint`, `typecheck`, `test`, `build` passent.

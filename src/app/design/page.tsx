@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import { DownloadIcon, FavoriteButton, SuccessCheck } from "@/components/ui/animated-icons";
 import { Badge } from "@/components/ui/badge";
 import { Button, ButtonLink } from "@/components/ui/button";
+import { CategoryIllustration, categories } from "@/components/ui/category-illustration";
 import { Field } from "@/components/ui/field";
 import { Sheet, ToastDemo } from "@/components/ui/overlays";
 import { ProductCard } from "@/components/ui/product-card";
@@ -214,6 +216,27 @@ export default function Design() {
           </Sheet>
           <ToastDemo declencheur="Afficher une notification" message="Ajouté à ta bibliothèque." />
         </div>
+      </Section>
+
+      <Section id="illustrations" titre="Illustrations par univers">
+        <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
+          {categories.map((c) => (
+            <li key={c.id}>
+              <CategoryIllustration id={c.id} className="w-full" />
+              <p className="mt-2 font-titre font-semibold">{c.label}</p>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-6 max-w-[60ch] text-encre-2">Dessins originaux à plat, palette de la marque, contour encre de 4 unités. Un par univers, réutilisables sur l&apos;accueil, les pages de catégorie et les états vides.</p>
+      </Section>
+
+      <Section id="icones" titre="Icônes animées">
+        <div className="flex flex-wrap items-center gap-8">
+          <FavoriteButton />
+          <DownloadIcon />
+          <SuccessCheck />
+        </div>
+        <p className="mt-6 max-w-[60ch] text-encre-2">Chaque animation confirme une action : favori ajouté, téléchargement lancé, paiement validé. Moins de 400 ms, désactivées si le système demande moins de mouvement.</p>
       </Section>
 
       <Section id="mouvement" titre="Mouvement">
