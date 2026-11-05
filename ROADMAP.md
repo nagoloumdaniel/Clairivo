@@ -410,4 +410,4 @@ Dans cet ordre, selon les chiffres réels :
 
 ## Questions ouvertes
 
-Voir `CONTEXT.md`. Décisions du 5 novembre 2026 : micro-entreprise en France, Stripe direct, prix plancher 2,99 €, compte créé à l'achat par lien magique, Inter pour le texte, logo fourni plus tard, pays servis : Europe francophone (France, Belgique, Suisse, Luxembourg).
+Voir `CONTEXT.md`. Décisions du 5 novembre 2026 : micro-entreprise en France, Stripe direct, prix plancher 2,99 €, compte créé à l'achat par lien magique, Inter pour le texte, logo fourni plus tard, pays servis au lancement : France, Belgique, Luxembourg (Suisse plus tard). Prix affichés = prix payés (franchise de TVA). Licence propriétaire.
