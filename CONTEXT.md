@@ -22,7 +22,7 @@ Valider la roadmap, puis phase 0 (décisions, entité, Stripe, domaine, logo).
 
 ## Phase 0 : avancement (2026-11-05)
 - Fait : `docs/conformite.md` (franchise TVA, OSS, rétractation, cookies), points non vérifiés marqués.
-- À faire par toi : compte Stripe et vérification d'identité, achat du domaine après recherche INPI/EUIPO, coordonnées pour les mentions légales, choix de la licence, question au SIE sur franchise + OSS.
+- À faire par toi : compte Stripe et vérification d'identité, achat du domaine après recherche INPI/EUIPO, coordonnées pour les mentions légales, question au SIE sur franchise + OSS.
 - À faire par moi : registre des droits des 15 premiers produits, TVA suisse, lecture complète de L221-13 et L221-5.
 
 ## Questions ouvertes
