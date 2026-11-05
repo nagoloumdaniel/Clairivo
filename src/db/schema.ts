@@ -147,3 +147,16 @@ export const auditLogs = pgTable("audit_logs", {
   meta: jsonb("meta"),
   createdAt: createdAt(),
 }, (t) => [index("audit_logs_entity_idx").on(t.entity, t.entityId)]);
+
+export const waitlistSignups = pgTable("waitlist_signups", {
+  id: id(),
+  email: text("email").notNull(),
+  universes: text("universes").array().notNull().default(sql`'{}'::text[]`),
+  consentAt: timestamp("consent_at", { withTimezone: true }).notNull().defaultNow(),
+  consentVersion: text("consent_version").notNull(),
+  confirmedAt: timestamp("confirmed_at", { withTimezone: true }),
+  createdAt: createdAt(),
+}, (t) => [
+  uniqueIndex("waitlist_signups_email_uq").on(sql`lower(${t.email})`),
+  check("waitlist_signups_email_len", sql`char_length(${t.email}) <= 254`),
+]);

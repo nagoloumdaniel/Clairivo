@@ -1,6 +1,6 @@
 # CONTEXT Clairivo
 
-Mis à jour : 2026-11-05. Branche : `feat/foundations` (pas encore poussée).
+Mis à jour : 2026-11-05. Branche : `feat/landing-waitlist` (empilée sur `feat/foundations`, PR #6).
 
 ## État
 Phase 0 terminée côté documents et Stripe test. Phase 2 (fondations) démarrée. PR ouvertes non fusionnées : #4 (`docs/phase-1-cadrage`, prix du chapitre 23 et décisions) et #5 (`docs/validation-marche`, seuils Go/Stop). Leur contenu n'est pas encore dans ce fichier tant qu'elles ne sont pas fusionnées.
@@ -17,7 +17,11 @@ Phase 2 : socle Next.js + TypeScript strict + Tailwind + Motion, Drizzle, Vitest
 - Fait (2026-11-05, Sentry) : DSN validé par un vrai événement (CLAIRIVO-1 reçu, alerte par défaut « high priority issues » déclenchée). Les 5 variables Sentry sont aussi dans Vercel en Production en plus de Preview (`SENTRY_AUTH_TOKEN` en sensitive), posées via la CLI car le connecteur Vercel ne voit pas le projet. Aucun déploiement lancé depuis; les déploiements existants n'ont pas ces valeurs.
 - Reste : STRIPE_WEBHOOK_SECRET (phase 6), autres variables Production (au lancement, avec ton accord), token Sentry à régénérer (apparu dans une sortie de session), vérifier un événement depuis une preview redéployée, CI GitHub Actions qui ne démarre pas.
 
-## Direction visuelle de la landing, proposée (à valider)
+## Landing liste d'attente (2026-11-05, branche feat/landing-waitlist)
+- Fait : page d'accueil (héros corail, éventail de 3 couvertures vectorielles, 3 ressources gratuites annoncées, vote d'univers, consentement non précoché), table `waitlist_signups` (migration 0002 appliquée, RLS), action serveur avec validation Zod et champ piège, pages `/mentions-legales` et `/confidentialite` (noindex, champs éditeur à renseigner). Lint, types, 6 tests unitaires, 3 E2E OK; inscription réelle vérifiée en base.
+- Reste : double opt-in par e-mail (Resend, `confirmed_at` déjà prévu), limitation de débit anti-abus, mentions légales (éditeur, SIREN, adresse, e-mail), durée de conservation de 3 ans à valider, transfert Vercel (États-Unis) à vérifier, favicon et image Open Graph (attendent le logo), suppression d'une ligne de test `test-clairivo-tmp@example.com` dans `waitlist_signups` (suppression SQL refusée).
+
+## Direction visuelle de la landing (implémentée, à valider visuellement)
 - Concept « la couverture » : hero en aplat corail `#FF7048`, texte encre `#20202A` (jamais de blanc sur corail), éventail de 3 couvertures vectorielles originales (formats, pas de faux titres), sections de lecture sur ivoire `#FFF9F2`, mode sombre complet.
 - Sora pour les titres, Inter pour le texte. Alignement à gauche, mise en page asymétrique.
 - Formulaire : e-mail, vote pour un univers (emploi, IA, freelancing, marketing social, budget) pour alimenter la grille de la phase 1, case de consentement non précochée.
