@@ -15,7 +15,9 @@ Valider la roadmap, puis phase 0 (décisions, entité, Stripe, domaine, logo).
 - 2026-11-05 : prix plancher 2,99 € TTC, grille remontée (voir ROADMAP, « Grille de prix décidée »). Plafond produit 9,99 €, plafond pack 14,99 €. L'ancienne fiche à 0,99 € devient gratuite.
 - 2026-11-05 : compte créé à l'achat par lien magique.
 - 2026-11-05 : Inter pour le texte.
-- 2026-11-05 : pays servis = Europe francophone (France, Belgique, Suisse, Luxembourg), en français.
+- 2026-11-05 : pays servis au lancement = France, Belgique, Luxembourg, en français. Suisse reportée tant que la TVA suisse n'est pas vérifiée.
+- 2026-11-05 : prix affichés = prix payés (franchise en base de TVA, pas de TVA ajoutée).
+- 2026-11-05 : licence du dépôt = propriétaire (tous droits réservés).
 - 2026-11-05 : landing avec liste d'attente en phase 1 acceptée.
 
 ## Phase 0 : avancement (2026-11-05)
@@ -26,9 +28,7 @@ Valider la roadmap, puis phase 0 (décisions, entité, Stripe, domaine, logo).
 ## Questions ouvertes
 1. Logo : à fournir plus tard. Rien n'est inventé en attendant.
 2. Franchise en base et OSS : comment s'articulent-elles au-delà de 10 000 € de ventes UE ? À confirmer auprès du SIE et dans le BOFiP.
-3. TVA suisse sur les services électroniques : à rechercher. Reco : lancer sans la Suisse.
-4. Licence du dépôt (MIT, Apache 2.0, propriétaire). Reco : propriétaire (code non ouvert), car le produit est commercial.
-5. Prix affichés en franchise de TVA : on affiche des prix sans TVA, donc 2,99 € est le prix payé. OK pour toi ?
+3. TVA suisse sur les services électroniques : à rechercher avant d'ouvrir la Suisse.
 
 ## Points à confirmer
 - Tarifs Stripe exacts de ton pays (chiffres de la roadmap = ordres de grandeur, non officiels).

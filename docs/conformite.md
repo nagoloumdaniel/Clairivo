@@ -6,7 +6,7 @@ Dernière vérification : 5 novembre 2026. Ce document résume ce que j'ai pu li
 
 - Vendeur : micro-entreprise établie en France.
 - Produits : contenus numériques téléchargeables (guides, modèles, mini-formations), livrés immédiatement.
-- Clients visés : particuliers de l'Europe francophone (France, Belgique, Suisse, Luxembourg).
+- Clients visés au lancement : particuliers de France, Belgique et Luxembourg. La Suisse est reportée.
 - Paiement : Stripe (cartes, Apple Pay, Google Pay).
 
 ## 2. TVA
