@@ -1,8 +1,11 @@
 "use server";
 
+import { createHash, randomBytes } from "node:crypto";
 import * as Sentry from "@sentry/nextjs";
+import { sql } from "drizzle-orm";
 import { db } from "@/db";
-import { waitlistSignups } from "@/db/schema";
+import { sendMail } from "@/lib/mail";
+import { allow, clientKey } from "@/lib/rate-limit";
 import { CONSENT_VERSION, waitlistSchema } from "./schema";
 
 export type WaitlistState =
@@ -30,15 +33,40 @@ export async function joinWaitlist(_prev: WaitlistState, form: FormData): Promis
   }
 
   try {
-    // Une adresse déjà inscrite est ignorée sans le dire : on ne révèle pas qui est dans la liste.
-    await db
-      .insert(waitlistSignups)
-      .values({
-        email: parsed.data.email,
-        universes: parsed.data.universes,
-        consentVersion: CONSENT_VERSION,
-      })
-      .onConflictDoNothing();
+    if (!(await allow(await clientKey("waitlist"), 5, 3600))) {
+      return { status: "error", message: "Trop de tentatives. Réessaie dans une heure." };
+    }
+
+    const token = randomBytes(32).toString("hex");
+    const tokenHash = createHash("sha256").update(token).digest("hex");
+
+    // Adresse déjà confirmée ou mail envoyé il y a moins de 15 min : aucune ligne renvoyée, on ne dit rien.
+    const rows = await db.execute(sql`
+      insert into waitlist_signups (email, universes, consent_version, confirm_token_hash, confirm_sent_at)
+      values (${parsed.data.email}, ${parsed.data.universes}::text[], ${CONSENT_VERSION}, ${tokenHash}, now())
+      on conflict (lower(email)) do update
+        set confirm_token_hash = excluded.confirm_token_hash, confirm_sent_at = now()
+        where waitlist_signups.confirmed_at is null
+          and (waitlist_signups.confirm_sent_at is null or waitlist_signups.confirm_sent_at < now() - interval '15 minutes')
+      returning email`);
+
+    if (rows.length > 0) {
+      const base = process.env.NEXT_PUBLIC_APP_URL ?? "";
+      const link = `${base}/confirmer?token=${token}`;
+      await sendMail({
+        to: parsed.data.email,
+        subject: "Confirme ton inscription à Clairivo",
+        text: `Bonjour,
+
+Pour confirmer ton inscription à la liste d'attente de Clairivo, ouvre ce lien :
+${link}
+
+Si tu n'es pas à l'origine de cette demande, ignore ce message : rien ne sera enregistré.
+
+Clairivo`,
+        html: `<p>Bonjour,</p><p>Pour confirmer ton inscription à la liste d'attente de Clairivo, ouvre ce lien :</p><p><a href="${link}">Confirmer mon inscription</a></p><p>Si tu n'es pas à l'origine de cette demande, ignore ce message : rien ne sera enregistré.</p><p>Clairivo</p>`,
+      });
+    }
     return { status: "success" };
   } catch (error) {
     Sentry.captureException(error);

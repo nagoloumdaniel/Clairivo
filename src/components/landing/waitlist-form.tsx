@@ -13,9 +13,9 @@ export function WaitlistForm() {
   if (state.status === "success") {
     return (
       <div role="status" className="max-w-xl border-2 border-[var(--h-texte)] px-5 py-5">
-        <p className="font-titre text-2xl font-semibold">C&apos;est noté.</p>
+        <p className="font-titre text-2xl font-semibold">Dernière étape : ta boîte mail.</p>
         <p className="mt-2">
-          Tu seras prévenu à l&apos;ouverture, avec les trois premières ressources gratuites. Un lien de désinscription sera présent dans chaque e-mail.
+          Nous venons de t&apos;envoyer un lien. Clique dessus pour confirmer ton adresse, sinon tu ne seras pas prévenu. Pense à regarder tes courriers indésirables.
         </p>
       </div>
     );

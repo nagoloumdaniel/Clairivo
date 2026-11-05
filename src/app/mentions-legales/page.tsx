@@ -21,12 +21,12 @@ export default function MentionsLegales() {
           <section>
             <h2 className="text-2xl font-semibold">Éditeur du site</h2>
             <ul className="mt-3 space-y-1">
-              <li>Nom ou raison sociale : {aRemplir}</li>
+              <li>Nom : Daniel Nagoloum Talla (entrepreneur individuel)</li>
               <li>Statut : micro-entreprise (France)</li>
               <li>Numéro SIREN : {aRemplir}</li>
-              <li>Adresse : {aRemplir}</li>
+              <li>Adresse : Noisy-le-Grand, Île-de-France, France (adresse postale complète : {aRemplir})</li>
               <li>E-mail de contact : {aRemplir}</li>
-              <li>Directeur de la publication : {aRemplir}</li>
+              <li>Directeur de la publication : Daniel Nagoloum Talla</li>
             </ul>
           </section>
           <section>

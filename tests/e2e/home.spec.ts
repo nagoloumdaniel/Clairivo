@@ -24,3 +24,10 @@ test("les pages légales existent", async ({ page }) => {
     expect(res?.status()).toBe(200);
   }
 });
+
+test("un lien de confirmation inconnu est refusé", async ({ page }) => {
+  await page.goto("/confirmer?token=" + "0".repeat(64));
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("ne fonctionne plus");
+  await page.goto("/confirmer");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("ne fonctionne plus");
+});

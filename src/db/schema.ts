@@ -155,8 +155,16 @@ export const waitlistSignups = pgTable("waitlist_signups", {
   consentAt: timestamp("consent_at", { withTimezone: true }).notNull().defaultNow(),
   consentVersion: text("consent_version").notNull(),
   confirmedAt: timestamp("confirmed_at", { withTimezone: true }),
+  confirmTokenHash: text("confirm_token_hash"),
+  confirmSentAt: timestamp("confirm_sent_at", { withTimezone: true }),
   createdAt: createdAt(),
 }, (t) => [
   uniqueIndex("waitlist_signups_email_uq").on(sql`lower(${t.email})`),
   check("waitlist_signups_email_len", sql`char_length(${t.email}) <= 254`),
 ]);
+
+export const rateLimits = pgTable("rate_limits", {
+  key: text("key").primaryKey(),
+  count: integer("count").notNull().default(0),
+  windowStart: timestamp("window_start", { withTimezone: true }).notNull().defaultNow(),
+});

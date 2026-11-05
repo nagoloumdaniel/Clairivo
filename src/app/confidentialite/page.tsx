@@ -20,7 +20,7 @@ export default function Confidentialite() {
           <section>
             <h2 className="text-2xl font-semibold">Ce que nous collectons</h2>
             <p className="mt-3">
-              Quand tu t&apos;inscris à la liste d&apos;attente : ton adresse e-mail, les sujets que tu as cochés (facultatif), la date de ton accord et la version du texte que tu as accepté. Nous ne collectons ni ton adresse IP dans la base ni ton nom.
+              Quand tu t&apos;inscris à la liste d&apos;attente : ton adresse e-mail, les sujets que tu as cochés (facultatif), la date de ton accord, la version du texte que tu as accepté et la date de confirmation de ton adresse (double confirmation par e-mail). Ton adresse IP n&apos;est pas conservée en clair : une empreinte irréversible, sans lien avec ton e-mail, sert uniquement à limiter les inscriptions en masse. Nous ne collectons pas ton nom.
             </p>
           </section>
           <section>
@@ -40,6 +40,7 @@ export default function Confidentialite() {
             <ul className="mt-3 list-disc space-y-1 pl-5">
               <li>Supabase (base de données, Paris, France).</li>
               <li>Vercel (hébergement du site, États-Unis, avec des garanties de transfert à vérifier avant ouverture).</li>
+              <li>Resend (envoi des e-mails de confirmation, États-Unis, garanties de transfert à vérifier avant ouverture).</li>
               <li>Sentry (suivi des erreurs techniques, Allemagne), sans donnée personnelle volontairement transmise.</li>
             </ul>
           </section>
