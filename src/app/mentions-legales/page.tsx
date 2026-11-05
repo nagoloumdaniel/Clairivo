@@ -24,7 +24,7 @@ export default function MentionsLegales() {
               <li>Nom : Daniel Nagoloum Talla (entrepreneur individuel)</li>
               <li>Statut : micro-entreprise (France)</li>
               <li>Numéro SIREN : {aRemplir}</li>
-              <li>Adresse : Noisy-le-Grand, Île-de-France, France (adresse postale complète : {aRemplir})</li>
+              <li>Adresse : 93160 Noisy-le-Grand, France (rue et numéro : {aRemplir})</li>
               <li>E-mail de contact : <a href="mailto:Clairivo@protonmail.com" className="underline underline-offset-4">Clairivo@protonmail.com</a></li>
               <li>Directeur de la publication : Daniel Nagoloum Talla</li>
             </ul>
