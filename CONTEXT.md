@@ -1,12 +1,31 @@
 # CONTEXT Clairivo
 
-Mis à jour : 2026-11-05. Branche : `feat/landing-waitlist` (empilée sur `feat/foundations`, PR #6).
+Mis à jour : 2026-11-06. Branche : `feat/design-system` (PR #8, base `feat/landing-waitlist`, elle-même empilée sur `feat/foundations`, PR #6).
 
 ## État
 Phase 0 terminée côté documents et Stripe test. Phase 2 (fondations) démarrée. PR ouvertes non fusionnées : #4 (`docs/phase-1-cadrage`, prix du chapitre 23 et décisions) et #5 (`docs/validation-marche`, seuils Go/Stop). Leur contenu n'est pas encore dans ce fichier tant qu'elles ne sont pas fusionnées.
 
 ## Objectif en cours
 Phase 2 : socle Next.js + TypeScript strict + Tailwind + Motion, Drizzle, Vitest + Playwright, CI GitHub Actions, Sentry. Puis landing avec liste d'attente (phase 1), puis phases 3, 4, 5.
+
+## Phase 3 : design system (2026-11-06, branche feat/design-system)
+- Fait : composants `src/components/ui/` (bouton, champ, badge, carte produit à encoches, squelette, état vide/erreur, barre de série, modale, tiroir, notification, 5 illustrations par univers, 3 icônes animées), page interne `/design` (noindex) avec contrastes calculés, test unitaire des contrastes AA.
+- Validé par l'utilisateur : carte produit (dessin papier : onglet catégorie à gauche en haut, prix en bas à droite, titre + badge, sous-titre; sans hover animé).
+- Retours UI enregistrés dans la mémoire du projet (retours-ui-clairivo.md) : pas de focus ring sur les champs, pas de hover sur les cartes.
+- Reste : validation visuelle des illustrations et icônes, recherche d'inspiration citée (la recherche web générique n'a rien donné sur Awwwards/Mobbin, à refaire avec le connecteur Mobbin une fois autorisé), maquettes Figma des écrans clés, audit `better`/`ui-ux-checker` en fin d'écran, test E2E sur /design.
+- Les encoches de la carte sont peintes en ivoire : la carte doit être posée sur fond ivoire.
+- 2026-11-06, nouvelle direction demandée : plus premium, moderne, minimaliste, illustrations 3D, tout en gardant le site coloré (corail, violet, soleil, menthe, rose). Mobbin inutilisable (plan payant), Pinterest écarté (droits d'auteur).
+- 5 illustrations 3D originales générées avec Figma (emploi, IA, freelance, marketing, budget). Les liens d'image expirent après 7 jours : à télécharger dans `public/illustrations/` à l'intégration.
+- Maquettes Figma (fichier 3z3k1ivgrKTBWbKJgsR5Er) : Accueil, Catalogue, Fiche produit, Paiement réussi, Panier. Les produits affichés sont des exemples, pas le catalogue final.
+- 2026-11-06, direction révisée par l'utilisateur : PAS minimaliste (détaillé, immersif, complet, maximum d'interactions, créatif, intuitif, responsive). Carte produit actuelle conservée. Navigation flottante en bulle. Les maquettes Figma minimalistes sont à refaire selon cette direction.
+- 2026-11-06 : maquettes V2 (immersives, nav bulle, carte actuelle) faites dans Figma : "V2 Accueil (desktop 1440)" et "V2 Catalogue (desktop 1440)". Limite d'appels Figma MCP (plan Starter) atteinte : pas de version mobile, Accueil V2 non relu en détail. Piste : passer au code.
+- 2026-11-06 (suite): logo adopté = point corail + mot « Clairivo ». Nouvelle direction Accueil (voir retours-ui): hero sombre type référence, galerie d'univers dégradé + 3D, bande de défilement, packs, étapes, glassmorphism, thème clair/sombre dans la nav, icônes animées lucide-animated au survol. Panier et pages auth à refaire au même niveau premium. Illustrations 3D abandonnées (résidus de fond) : dossiers `public/illustrations/` et `tool/illustrations/` supprimés, remplacés par des tuiles de verre avec pictogramme (`GlassIcon`, animation au survol du parent `group`). Accueil en cours de code sur `/accueil` (la landing d'attente reste sur `/`).
+- 2026-11-06 (panier et auth) : panier en tiroir `<dialog>` (`src/components/cart/`, contexte + localStorage `clairivo-panier`, une ligne par produit, paiement désactivé jusqu'à la phase 6), pages `/connexion` et `/inscription` (noindex, sans backend : message honnête à la validation, bouton Google désactivé, vrai auth en phase 5). Pied de page : sans prix, couleur claire en thème sombre. Bouton compte dans la nav. Démo du panier dans `/design`. Pages `/catalogue`, `/packs`, `/aide` pas encore créées (404 au préchargement des liens).
+- 2026-11-06 (style arrondi) : boutons et champs en pastille (comme la nav), champs avec icône et placeholder (`Field`, `PasswordField`), mot de passe 8 caractères min, chargement en orbite (`Loader`) + reflet, état grisé. Pages ajoutées : /mot-de-passe-oublie, /reinitialiser-mot-de-passe, /verification-email, 404 (`not-found.tsx`), 500 (`error.tsx`). Google retiré de l'inscription. Règles globales ajoutées (ui-anti-ia, erreurs-securite-ui). Liste de bibliothèques/sites UI à fournir par l'utilisateur.
+- 2026-11-06 (validé par l'utilisateur : pages auth, 404 en grand, /catalogue /packs /aide) : tiroir du panier avec slide à l'ouverture et à la fermeture (transition discrète CSS sur `<dialog>`), sans voile sombre derrière, curseur main sur tous les boutons actifs. 16 tests E2E (`tests/e2e/auth.spec.ts`). Les cartes de /packs pointent vers /packs/<id> (404 jusqu'aux fiches produit, phase 4).
+- 2026-11-06 : fond du panier = flou conservé, aucun voile sombre. Style arrondi étendu (modale, notification, squelette, état vide, FAQ, /design). Section « Sélection » ajoutée : 4 ressources gratuites sur /accueil, 15 ressources du cahier (chap. 23, prix provisoires, badge Bientôt) sur /catalogue, données dans `src/lib/selection.ts`; les cartes mènent à /inscription jusqu'aux fiches produit. Couverture : textes descendus sous l'onglet catégorie. 16 E2E verts.
+- Reste phase 3 : audit ui-ux-checker (lancé), corrections, commit local; PR #8 mise à jour après validation de l'utilisateur.
+- En attente de validation des maquettes. Ensuite : intégrer les PNG 3D (WebP/AVIF), remplacer les SVG à plat, restyler le design system, puis audit et E2E. Ne pas pousser ni mettre à jour la PR #8 avant validation.
 
 ## Phase 2 : avancement (2026-11-05)
 - Fait : Next.js (App Router), TypeScript strict, Tailwind, Vitest, Playwright (config + 1 test), CI GitHub Actions (lint, typecheck, test, build, audit prod niveau high), structure `src/domains/*`, schéma Drizzle complet + migration `drizzle/0000_*.sql` générée (non appliquée). `lint`, `typecheck`, `test`, `build` passent.
