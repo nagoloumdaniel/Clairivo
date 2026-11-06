@@ -1,1 +1,100 @@
 @import "tailwindcss";
+
+:root {
+  --ivoire: #fff9f2;
+  --surface: #ffffff;
+  --encre: #20202a;
+  --encre-2: #686575;
+  --ligne: #e9e4e0;
+  --corail: #ff7048;
+  --violet: #7657e8;
+  --soleil: #ffd45a;
+  --menthe: #75d7b0;
+  --rose: #f58db7;
+  --erreur: #b3261e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ivoire: #17161d;
+    --surface: #211f29;
+    --encre: #f6f0e8;
+    --encre-2: #b5b0bf;
+    --ligne: #34313d;
+    --erreur: #ff9a8f;
+  }
+}
+
+/* Le héros reste corail dans les deux thèmes : le texte dessus est toujours l'encre claire du mode clair. */
+.hero {
+  --h-fond: #ff7048;
+  --h-texte: #20202a;
+  --h-champ: #fffdf9;
+  --h-erreur: #7a1710;
+}
+
+@theme inline {
+  --color-ivoire: var(--ivoire);
+  --color-surface: var(--surface);
+  --color-encre: var(--encre);
+  --color-encre-2: var(--encre-2);
+  --color-ligne: var(--ligne);
+  --color-corail: var(--corail);
+  --color-violet: var(--violet);
+  --color-soleil: var(--soleil);
+  --color-menthe: var(--menthe);
+  --color-rose: var(--rose);
+  --color-erreur: var(--erreur);
+  --font-titre: var(--font-sora), ui-sans-serif, system-ui, sans-serif;
+  --font-texte: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  background: var(--ivoire);
+  color: var(--encre);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100dvh;
+  line-height: 1.6;
+  font-feature-settings: "tnum" 1;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--violet);
+  color: #fff9f2;
+}
+
+:focus-visible {
+  outline: 3px solid var(--violet);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.hero :focus-visible {
+  outline-color: var(--h-texte);
+}
+
+a {
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1.5px;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-sora), ui-sans-serif, system-ui, sans-serif;
+  text-wrap: balance;
+}
+
+p { text-wrap: pretty; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

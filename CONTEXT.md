@@ -1,6 +1,6 @@
 # CONTEXT Clairivo
 
-Mis à jour : 2026-11-06. Branche : `main`.
+Mis à jour : 2026-11-05. Branche : `feat/landing-waitlist` (empilée sur `feat/foundations`, PR #6).
 
 ## État
 Phase 0 terminée côté documents et Stripe test. Phase 2 (fondations) démarrée. PR ouvertes non fusionnées : #4 (`docs/phase-1-cadrage`, prix du chapitre 23 et décisions) et #5 (`docs/validation-marche`, seuils Go/Stop). Leur contenu n'est pas encore dans ce fichier tant qu'elles ne sont pas fusionnées.
@@ -17,7 +17,12 @@ Phase 2 : socle Next.js + TypeScript strict + Tailwind + Motion, Drizzle, Vitest
 - Fait (2026-11-05, Sentry) : DSN validé par un vrai événement (CLAIRIVO-1 reçu, alerte par défaut « high priority issues » déclenchée). Les 5 variables Sentry sont aussi dans Vercel en Production en plus de Preview (`SENTRY_AUTH_TOKEN` en sensitive), posées via la CLI car le connecteur Vercel ne voit pas le projet. Aucun déploiement lancé depuis; les déploiements existants n'ont pas ces valeurs.
 - Reste : STRIPE_WEBHOOK_SECRET (phase 6), autres variables Production (au lancement, avec ton accord), token Sentry à régénérer (apparu dans une sortie de session), vérifier un événement depuis une preview redéployée, CI GitHub Actions qui ne démarre pas.
 
-## Direction visuelle de la landing, proposée (à valider)
+## Landing liste d'attente (2026-11-05, branche feat/landing-waitlist)
+- Fait : page d'accueil (héros corail, éventail de 3 couvertures vectorielles, 3 ressources gratuites annoncées, vote d'univers, consentement non précoché), table `waitlist_signups` (migration 0002 appliquée, RLS), action serveur avec validation Zod et champ piège, pages `/mentions-legales` et `/confidentialite` (noindex, champs éditeur à renseigner). Lint, types, 6 tests unitaires, 3 E2E OK; inscription réelle vérifiée en base.
+- Ajouté (2026-11-05) : double opt-in (jeton aléatoire, empreinte SHA-256 en base, page `/confirmer`, renvoi possible après 15 min, rien n'est révélé sur les adresses déjà inscrites), limitation de débit (5 inscriptions par heure et par empreinte d'IP, table `rate_limits`, migration 0003 appliquée avec RLS), envoi via l'API Resend (`RESEND_API_KEY`, `RESEND_FROM`, vides pour l'instant: sans clé, aucun mail n'est envoyé). Mentions légales: nom, ville, directeur de publication et e-mail de contact (Clairivo@protonmail.com) renseignés. 4 E2E OK (`E2E_PORT` permet un autre port).
+- Reste : clé Resend et domaine d'envoi vérifié (après achat du domaine; tant que la clé manque, personne ne peut confirmer), SIREN, rue et code postal, durée de conservation de 3 ans à valider, garanties de transfert Vercel et Resend (États-Unis) à vérifier, favicon et image Open Graph (attendent le logo), purge périodique de `rate_limits`, suppression d'une ligne de test `test-clairivo-tmp@example.com` dans `waitlist_signups` (suppression SQL refusée).
+
+## Direction visuelle de la landing (implémentée, à valider visuellement)
 - Concept « la couverture » : hero en aplat corail `#FF7048`, texte encre `#20202A` (jamais de blanc sur corail), éventail de 3 couvertures vectorielles originales (formats, pas de faux titres), sections de lecture sur ivoire `#FFF9F2`, mode sombre complet.
 - Sora pour les titres, Inter pour le texte. Alignement à gauche, mise en page asymétrique.
 - Formulaire : e-mail, vote pour un univers (emploi, IA, freelancing, marketing social, budget) pour alimenter la grille de la phase 1, case de consentement non précochée.
@@ -35,12 +40,6 @@ Phase 2 : socle Next.js + TypeScript strict + Tailwind + Motion, Drizzle, Vitest
 - 2026-11-05 : prix affichés = prix payés (franchise en base de TVA, pas de TVA ajoutée).
 - 2026-11-05 : licence du dépôt = propriétaire (tous droits réservés).
 - 2026-11-05 : landing avec liste d'attente en phase 1 acceptée.
-- 2026-11-05 : prix du chapitre 23 alignés sur la grille (2,49 € devient 2,99 €, les autres inchangés).
-- 2026-11-05 : éditeur = Nagoloum Talla Daniel, Noisy-le-Grand (Île-de-France), contact landhack049@gmail.com. SIREN et adresse complète à compléter pour les mentions légales.
-- 2026-11-05 : compte Stripe réel déjà vérifié (KYC fait). Le développement reste en mode test. Google Pay activé et moyens superflus retirés par l'utilisateur.
-- 2026-11-05 : OSS et question au SIE écartées pour l'instant par l'utilisateur (à rouvrir si les ventes UE hors France approchent 8 000 €).
-- 2026-11-05 : « Clairivo » absent de l'INPI selon l'utilisateur (à confirmer sur l'EUIPO). Domaine : l'utilisateur l'achète et prévient.
-- 2026-11-05 : ordre de travail = phase 1 (landing liste d'attente), phase 2 (fondations), puis phase 5.
 
 ## Phase 0 : avancement (2026-11-05)
 - Fait : `docs/conformite.md` (franchise TVA, OSS, rétractation, cookies), points non vérifiés marqués.
@@ -57,6 +56,7 @@ Phase 2 : socle Next.js + TypeScript strict + Tailwind + Motion, Drizzle, Vitest
 - Env : `.env.example` (noms) et `.env.local` (ignoré par git) synchronisés. Clés Stripe à renseigner (le connecteur ne les expose pas), webhook de test à créer en phase 6.
 
 ## Questions ouvertes
+0. Chapitre 23 du cahier : prix de départ pas alignés sur la grille (ex. 2,49 € sous le plancher de 2,99 €). Proposition : appliquer la grille (2,49 → 2,99 ; 3,99 → 3,99 ; 4,99 → 4,99 ; 6,99 et 9,99 inchangés). À valider.
 1. Logo : à fournir plus tard. Rien n'est inventé en attendant.
 2. Franchise en base et OSS : comment s'articulent-elles au-delà de 10 000 € de ventes UE ? À confirmer auprès du SIE et dans le BOFiP.
 3. TVA suisse sur les services électroniques : à rechercher avant d'ouvrir la Suisse.
