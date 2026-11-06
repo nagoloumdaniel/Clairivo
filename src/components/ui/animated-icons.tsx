@@ -74,7 +74,7 @@ export function DownloadIcon({ declencheur = "Télécharger" }: { declencheur?: 
     <button
       type="button"
       onClick={() => setN((v) => v + 1)}
-      className="inline-flex min-h-11 items-center gap-2 rounded-md border-2 border-encre px-4 font-semibold text-encre"
+      className="inline-flex min-h-11 items-center gap-2 rounded-full border-2 border-encre px-4 font-semibold text-encre"
     >
       <svg viewBox="0 0 24 24" className="size-5 overflow-hidden" aria-hidden="true">
         <motion.g

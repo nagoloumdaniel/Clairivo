@@ -33,10 +33,10 @@ export function Cover({ fond, encre, accent, format, sujet, forme, droite }: Cov
           <rect x="24" y="230" width="164" height="28" fill={accent} />
         </>
       )}
-      <text x={droite ? 216 : 24} textAnchor={droite ? "end" : "start"} y="44" fill={encre} fontFamily="var(--font-inter), sans-serif" fontSize="11" fontWeight="600" letterSpacing="1.4">
+      <text x={droite ? 216 : 24} textAnchor={droite ? "end" : "start"} y="68" fill={encre} fontFamily="var(--font-inter), sans-serif" fontSize="11" fontWeight="600" letterSpacing="1.4">
         {format.toUpperCase()}
       </text>
-      <text x={droite ? 216 : 24} textAnchor={droite ? "end" : "start"} y="86" fill={encre} fontFamily="var(--font-sora), sans-serif" fontSize="34" fontWeight="700">
+      <text x={droite ? 216 : 24} textAnchor={droite ? "end" : "start"} y="108" fill={encre} fontFamily="var(--font-sora), sans-serif" fontSize="34" fontWeight="700">
         {sujet}
       </text>
     </svg>

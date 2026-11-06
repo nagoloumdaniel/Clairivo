@@ -1,7 +1,7 @@
 import { NotchedMedia } from "@/components/ui/notched-media";
 
 export function Skeleton({ className = "" }: { className?: string }) {
-  return <div aria-hidden="true" className={`animate-pulse rounded-md bg-ligne ${className}`} />;
+  return <div aria-hidden="true" className={`animate-pulse rounded-xl bg-ligne ${className}`} />;
 }
 
 /** Même silhouette que ProductCard : image à encoches, onglet, prix, titre + badge, sous-titre. */

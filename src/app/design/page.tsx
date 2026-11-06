@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CartDemo } from "@/components/cart/cart-demo";
 import { DownloadIcon, FavoriteButton, SuccessCheck } from "@/components/ui/animated-icons";
 import { Badge } from "@/components/ui/badge";
 import { Button, ButtonLink } from "@/components/ui/button";
@@ -68,7 +69,7 @@ export default function Design() {
         <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {couleurs.map((c) => (
             <li key={c.token}>
-              <div className="h-20 rounded-md border-2 border-encre" style={{ background: `var(--${c.token})` }} />
+              <div className="h-20 rounded-2xl border-2 border-encre" style={{ background: `var(--${c.token})` }} />
               <p className="mt-2 font-titre font-semibold">{c.nom}</p>
               <p className="text-sm text-encre-2">
                 {c.hex} · {c.role}
@@ -95,7 +96,7 @@ export default function Design() {
                   <tr key={c.usage} className="border-b border-ligne">
                     <th scope="row" className="py-2 pr-4 font-medium">{c.usage}</th>
                     <td className="py-2 pr-4">
-                      <span className="rounded px-2 py-1 font-semibold" style={{ color: c.texte, background: c.fond }}>Aa</span>
+                      <span className="rounded-lg px-2 py-1 font-semibold" style={{ color: c.texte, background: c.fond }}>Aa</span>
                     </td>
                     <td className="py-2 pr-4 tabular-nums">{r.toFixed(2)}</td>
                     <td className="py-2">{r >= c.min ? `OK (≥ ${c.min})` : `Insuffisant (< ${c.min})`}</td>
@@ -126,7 +127,7 @@ export default function Design() {
           ))}
         </ul>
         <p className="mt-6 max-w-[60ch] text-encre-2">
-          Une seule échelle, sans valeur intermédiaire. Rayon unique de 6 px pour les composants, pastille complète pour les badges. Contours de 2 px à la place des ombres : le relief vient du contraste, pas du flou.
+          Une seule échelle, sans valeur intermédiaire. Style arrondi : boutons et champs en pastille complète (comme la navigation), cartes très arrondies. Contours de 2 px à la place des ombres : le relief vient du contraste, pas du flou.
         </p>
       </Section>
 
@@ -216,6 +217,11 @@ export default function Design() {
           </Sheet>
           <ToastDemo declencheur="Afficher une notification" message="Ajouté à ta bibliothèque." />
         </div>
+      </Section>
+
+      <Section id="panier" titre="Panier">
+        <CartDemo />
+        <p className="mt-6 max-w-[60ch] text-encre-2">Tiroir en verre ouvert depuis la nav. Une ligne par ressource, total TTC en centimes, état vide avec sortie vers le catalogue. Le prix affiché est recalculé par le serveur au paiement.</p>
       </Section>
 
       <Section id="illustrations" titre="Illustrations par univers">

@@ -14,7 +14,7 @@ export function Sheet({ titre, ouvrir, children, cote = "centre" }: SheetProps) 
   const position =
     cote === "droite"
       ? "ml-auto mr-0 h-dvh max-h-dvh w-[min(24rem,100%)] rounded-none border-y-0 border-r-0"
-      : "m-auto w-[min(32rem,calc(100%-2rem))] rounded-md";
+      : "m-auto w-[min(32rem,calc(100%-2rem))] rounded-3xl";
   return (
     <>
       <Button variant="secondary" size="sm" onClick={() => ref.current?.showModal()}>
@@ -31,7 +31,7 @@ export function Sheet({ titre, ouvrir, children, cote = "centre" }: SheetProps) 
             <h2 id="sheet-titre" className="font-titre text-2xl font-semibold">
               {titre}
             </h2>
-            <button type="button" onClick={() => ref.current?.close()} className="min-h-11 min-w-11 rounded-md font-semibold underline">
+            <button type="button" onClick={() => ref.current?.close()} className="min-h-11 min-w-11 rounded-full font-semibold underline">
               Fermer
             </button>
           </div>
@@ -57,7 +57,7 @@ export function ToastDemo({ declencheur, message }: { declencheur: string; messa
       </Button>
       <div aria-live="polite" className="pointer-events-none fixed inset-x-4 bottom-4 z-50 flex justify-center">
         {visible && (
-          <div className="pointer-events-auto flex max-w-md items-center gap-4 rounded-md border-2 border-[#20202a] bg-menthe px-5 py-3 text-[#20202a]">
+          <div className="pointer-events-auto flex max-w-md items-center gap-4 rounded-3xl border-2 border-[#20202a] bg-menthe px-5 py-3 text-[#20202a]">
             <p className="font-semibold">{message}</p>
             <button type="button" onClick={() => setVisible(false)} className="min-h-11 shrink-0 font-semibold underline">
               Fermer
