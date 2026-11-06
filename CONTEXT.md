@@ -1,6 +1,6 @@
 # CONTEXT Clairivo
 
-Mis à jour : 2026-11-05. Branche : `feat/foundations` (pas encore poussée).
+Mis à jour : 2026-11-06. Branche : `main`.
 
 ## État
 Phase 0 terminée côté documents et Stripe test. Phase 2 (fondations) démarrée. PR ouvertes non fusionnées : #4 (`docs/phase-1-cadrage`, prix du chapitre 23 et décisions) et #5 (`docs/validation-marche`, seuils Go/Stop). Leur contenu n'est pas encore dans ce fichier tant qu'elles ne sont pas fusionnées.
@@ -35,6 +35,12 @@ Phase 2 : socle Next.js + TypeScript strict + Tailwind + Motion, Drizzle, Vitest
 - 2026-11-05 : prix affichés = prix payés (franchise en base de TVA, pas de TVA ajoutée).
 - 2026-11-05 : licence du dépôt = propriétaire (tous droits réservés).
 - 2026-11-05 : landing avec liste d'attente en phase 1 acceptée.
+- 2026-11-05 : prix du chapitre 23 alignés sur la grille (2,49 € devient 2,99 €, les autres inchangés).
+- 2026-11-05 : éditeur = Nagoloum Talla Daniel, Noisy-le-Grand (Île-de-France), contact landhack049@gmail.com. SIREN et adresse complète à compléter pour les mentions légales.
+- 2026-11-05 : compte Stripe réel déjà vérifié (KYC fait). Le développement reste en mode test. Google Pay activé et moyens superflus retirés par l'utilisateur.
+- 2026-11-05 : OSS et question au SIE écartées pour l'instant par l'utilisateur (à rouvrir si les ventes UE hors France approchent 8 000 €).
+- 2026-11-05 : « Clairivo » absent de l'INPI selon l'utilisateur (à confirmer sur l'EUIPO). Domaine : l'utilisateur l'achète et prévient.
+- 2026-11-05 : ordre de travail = phase 1 (landing liste d'attente), phase 2 (fondations), puis phase 5.
 
 ## Phase 0 : avancement (2026-11-05)
 - Fait : `docs/conformite.md` (franchise TVA, OSS, rétractation, cookies), points non vérifiés marqués.
@@ -51,7 +57,6 @@ Phase 2 : socle Next.js + TypeScript strict + Tailwind + Motion, Drizzle, Vitest
 - Env : `.env.example` (noms) et `.env.local` (ignoré par git) synchronisés. Clés Stripe à renseigner (le connecteur ne les expose pas), webhook de test à créer en phase 6.
 
 ## Questions ouvertes
-0. Chapitre 23 du cahier : prix de départ pas alignés sur la grille (ex. 2,49 € sous le plancher de 2,99 €). Proposition : appliquer la grille (2,49 → 2,99 ; 3,99 → 3,99 ; 4,99 → 4,99 ; 6,99 et 9,99 inchangés). À valider.
 1. Logo : à fournir plus tard. Rien n'est inventé en attendant.
 2. Franchise en base et OSS : comment s'articulent-elles au-delà de 10 000 € de ventes UE ? À confirmer auprès du SIE et dans le BOFiP.
 3. TVA suisse sur les services électroniques : à rechercher avant d'ouvrir la Suisse.

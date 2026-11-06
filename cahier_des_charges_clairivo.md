@@ -2021,9 +2021,9 @@ présenté et réellement utile.
   Pack prompts pour le travail         3,99 €
   Workflows IA pour débutants          9,99 €
   Planner budget mensuel              Gratuit
-  Tableur budget avancé                2,49 €
+  Tableur budget avancé                2,99 €
   Checklist lancement freelance       Gratuit
-  Construire son offre de service      2,49 €
+  Construire son offre de service      2,99 €
   Trouver ses premiers clients         9,99 €
   Calendrier de contenu social         3,99 €
   Pack modèles de posts                4,99 €
